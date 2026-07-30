@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Técnico em Eletromecânica</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-title">ELETROMECÂNICA</span>
+                <span class="logo-subtitle">PORTAL DO ALUNO</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="active">Início</a></li>
+                    <li><a href="#modulos">Módulos</a></li>
+                    <li><a href="#formulas">Guia de Fórmulas</a></li>
+                    <li><a href="#saep" class="btn-highlight">Simulados SAEP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal (Hero) -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Técnico em Eletromecânica</h1>
+            <p>Plataforma técnica de apoio aos alunos: materiais de estudo, guias de consulta rápida e simulados preparatórios para o SAEP.</p>
+            <div class="hero-buttons">
+                <a href="#modulos" class="btn btn-primary">Explorar Módulos</a>
+                <a href="#saep" class="btn btn-secondary">Acessar Simulados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Módulos Curriculares -->
+    <section id="modulos" class="section">
+        <div class="container">
+            <h2 class="section-title">Matriz Curricular</h2>
+            <p class="section-subtitle">Acesse os conteúdos das Unidades Curriculares divididos por etapas de formação.</p>
+
+            <div class="grid-cards">
+                <!-- Card Módulo Introdutório -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="badge">Eixo Básico</span>
+                        <h3>Módulo Introdutório</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Fundamentos da Eletricidade Industrial (60h)</li>
+                            <li>Fundamentos da Tecnologia Mecânica (200h)</li>
+                            <li>Introdução à Fabricação Mecânica (40h)</li>
+                            <li>Saúde e Segurança no Trabalho (12h)</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card Módulo Específico 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="badge badge-accent">Eixo Técnico</span>
+                        <h3>Módulo Específico 1</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Montagem de Sistemas Eléticos (80h)</li>
+                            <li>Fabricação Mecânica Aplicada (140h)</li>
+                            <li>Introdução à Qualidade e Produtividade (16h)</li>
+                            <li>Modelagem de Projetos de Inovação (20h)</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Guia Rápido de Fórmulas -->
+    <section id="formulas" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Consulta Rápida de Equações</h2>
+            <p class="section-subtitle">Principais relações matemáticas e parâmetros aplicados no dia a dia da eletromecânica.</p>
+
+            <div class="table-responsive">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Área</th>
+                            <th>Parâmetro</th>
+                            <th>Fórmula</th>
+                            <th>Unidades (SI)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Eletricidade</strong></td>
+                            <td>1ª Lei de Ohm</td>
+                            <td><code>V = R * I</code></td>
+                            <td>Volt (V), Ohm (&Omega;), Ampère (A)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eletricidade</strong></td>
+                            <td>Potência Ativa Trifásica</td>
+                            <td><code>P = &radic;3 * V<sub>L</sub> * I<sub>L</sub> * cos(&phi;)</code></td>
+                            <td>Watt (W), Quilowatt (kW)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Usinagem</strong></td>
+                            <td>Rotação do Eixo (RPM)</td>
+                            <td><code>N = (V<sub>c</sub> * 1000) / (&pi; * d)</code></td>
+                            <td>RPM, V<sub>c</sub> (m/min), d (mm)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mecânica</strong></td>
+                            <td>Torque Mecânico</td>
+                            <td><code>T = F * d</code></td>
+                            <td>Newton-metro (N.m), N, m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção SAEP / Formulários -->
+    <section id="saep" class="section">
+        <div class="container saep-box">
+            <div class="saep-content">
+                <h2>Central de Simulados SAEP</h2>
+                <p>Prepare-se para o Sistema de Avaliação da Educação Profissional com situações-problema interativas e feedback imediato.</p>
+                <a href="#" class="btn btn-secondary btn-large">Iniciar Simulado Interativo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Curso Técnico em Eletromecânica. Todos os direitos reservados.</p>
+            <p class="footer-sub">Plataforma pedagógica desenvolvida para suporte discente.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/main.js"></script>
+</body>
+</html>
