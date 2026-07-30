@@ -48,3 +48,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+// 4. Lógica para expandir/recolher os módulos (UCs)
+    const toggleBtns = document.querySelectorAll('.btn-toggle-uc');
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            const targetContainer = document.getElementById(targetId);
+
+            // Alterna a classe ativa do botão e do container
+            btn.classList.toggle('active');
+            targetContainer.classList.toggle('active');
+
+            // Atualiza o texto do botão para melhor visualização
+            const btnText = btn.querySelector('.btn-text');
+            if (btn.classList.contains('active')) {
+                btnText.textContent = 'Ocultar Unidades Curriculares';
+            } else {
+                btnText.textContent = 'Ver Unidades Curriculares';
+            }
+        });
+    });
