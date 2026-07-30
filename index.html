@@ -51,91 +51,210 @@
         </div>
     </section>
 
-  <!-- Seção de Módulos Curriculares -->
-    <section id="modulos" class="section">
-        <div class="container">
-            <h2 class="section-title">Matriz Curricular</h2>
-            <p class="section-subtitle">Acesse os conteúdos das Unidades Curriculares divididos por etapas de formação.</p>
+<!-- Seção de Módulos Curriculares -->
+<section id="modulos" class="section">
+    <div class="container">
+        <h2 class="section-title">Matriz Curricular</h2>
+        <p class="section-subtitle">Clique no módulo para expandir e acessar o ambiente de cada Unidade Curricular.</p>
 
-            <div class="grid-cards">
-                <!-- Card Módulo Introdutório -->
-                <div class="card">
-                    <div class="card-header">
-                        <span class="badge">Eixo Básico</span>
-                        <h3>Módulo Introdutório</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Fundamentos da Eletricidade Industrial (60h)</li>
-                            <li>Fundamentos da Tecnologia Mecânica (200h)</li>
-                            <li>Introdução à Fabricação Mecânica (40h)</li>
-                            <li>Saúde e Segurança no Trabalho (12h)</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
-                    </div>
+        <div class="grid-cards">
+            
+            <!-- MÓDULO INTRODUTÓRIO -->
+            <div class="card card-accordion">
+                <div class="card-header">
+                    <span class="badge">Eixo Básico</span>
+                    <h3>Módulo Introdutório</h3>
+                    <p class="card-meta">4 Unidades Curriculares • 312h</p>
                 </div>
+                <button class="btn-toggle-uc" data-target="uc-intro">
+                    <span class="btn-text">Ver Unidades Curriculares</span>
+                    <span class="arrow-icon">&#9660;</span>
+                </button>
+                <div class="uc-container" id="uc-intro">
+                    <div class="uc-list">
+                        <!-- Cada link direciona para a página específica da UC -->
+                        <a href="uc-eletricidade-industrial.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Fundamentos da Eletricidade Industrial</strong>
+                                <span class="uc-tag">60h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
 
-                <!-- Card Módulo Específico 1 -->
-                <div class="card">
-                    <div class="card-header">
-                        <span class="badge badge-accent">Eixo Técnico</span>
-                        <h3>Módulo Específico 1</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Montagem de Sistemas Elétricos (80h)</li>
-                            <li>Fabricação Mecânica Aplicada (140h)</li>
-                            <li>Introdução à Qualidade e Produtividade (16h)</li>
-                            <li>Modelagem de Projetos de Inovação (20h)</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
-                    </div>
-                </div>
+                        <a href="uc-tecnologia-mecanica.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Fundamentos da Tecnologia Mecânica</strong>
+                                <span class="uc-tag">200h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
 
-                <!-- Card Módulo Específico 2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <span class="badge badge-accent">Eixo Técnico</span>
-                        <h3>Módulo Específico 2</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Sistemas Pneumáticos e Hidráulicos (80h)</li>
-                            <li>Acionamentos e Comandos Elétricos (100h)</li>
-                            <li>Manutenção Mecânica de Equipamentos (120h)</li>
-                            <li>Controladores Lógicos Programáveis - CLP (60h)</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
-                    </div>
-                </div>
+                        <a href="uc-fabricacao-mecanica-intro.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Introdução à Fabricação Mecânica</strong>
+                                <span class="uc-tag">40h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
 
-                <!-- Card Módulo Específico 3 -->
-                <div class="card">
-                    <div class="card-header">
-                        <span class="badge badge-accent">Eixo Avançado</span>
-                        <h3>Módulo Específico 3</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Manutenção Eletromecânica Integrada (120h)</li>
-                            <li>Planejamento e Controle da Manutenção - PCM (40h)</li>
-                            <li>Projetos Eletromecânicos e Automação (100h)</li>
-                            <li>Eficiência Energética e Conservação (40h)</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn-card">Acessar Materiais &rarr;</a>
+                        <a href="uc-sst.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Saúde e Segurança no Trabalho</strong>
+                                <span class="uc-tag">12h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
                     </div>
                 </div>
             </div>
+
+            <!-- MÓDULO ESPECÍFICO 1 -->
+            <div class="card card-accordion">
+                <div class="card-header">
+                    <span class="badge badge-accent">Eixo Técnico</span>
+                    <h3>Módulo Específico 1</h3>
+                    <p class="card-meta">4 Unidades Curriculares • 256h</p>
+                </div>
+                <button class="btn-toggle-uc" data-target="uc-esp1">
+                    <span class="btn-text">Ver Unidades Curriculares</span>
+                    <span class="arrow-icon">&#9660;</span>
+                </button>
+                <div class="uc-container" id="uc-esp1">
+                    <div class="uc-list">
+                        <a href="uc-sistemas-eletricos.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Montagem de Sistemas Elétricos</strong>
+                                <span class="uc-tag">80h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-fabricacao-aplicada.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Fabricação Mecânica Aplicada</strong>
+                                <span class="uc-tag">140h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-qualidade.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Introdução à Qualidade e Produtividade</strong>
+                                <span class="uc-tag">16h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-inovacao.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Modelagem de Projetos de Inovação</strong>
+                                <span class="uc-tag">20h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÓDULO ESPECÍFICO 2 -->
+            <div class="card card-accordion">
+                <div class="card-header">
+                    <span class="badge badge-accent">Eixo Técnico</span>
+                    <h3>Módulo Específico 2</h3>
+                    <p class="card-meta">4 Unidades Curriculares • 360h</p>
+                </div>
+                <button class="btn-toggle-uc" data-target="uc-esp2">
+                    <span class="btn-text">Ver Unidades Curriculares</span>
+                    <span class="arrow-icon">&#9660;</span>
+                </button>
+                <div class="uc-container" id="uc-esp2">
+                    <div class="uc-list">
+                        <a href="uc-fluida.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Sistemas Pneumáticos e Hidráulicos</strong>
+                                <span class="uc-tag">80h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-comandos-eletricos.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Acionamentos e Comandos Elétricos</strong>
+                                <span class="uc-tag">100h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-manutencao-mecanica.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Manutenção Mecânica de Equipamentos</strong>
+                                <span class="uc-tag">120h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-clp.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Controladores Lógicos Programáveis (CLP)</strong>
+                                <span class="uc-tag">60h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÓDULO ESPECÍFICO 3 -->
+            <div class="card card-accordion">
+                <div class="card-header">
+                    <span class="badge badge-accent">Eixo Avançado</span>
+                    <h3>Módulo Específico 3</h3>
+                    <p class="card-meta">4 Unidades Curriculares • 300h</p>
+                </div>
+                <button class="btn-toggle-uc" data-target="uc-esp3">
+                    <span class="btn-text">Ver Unidades Curriculares</span>
+                    <span class="arrow-icon">&#9660;</span>
+                </button>
+                <div class="uc-container" id="uc-esp3">
+                    <div class="uc-list">
+                        <a href="uc-manutencao-integrada.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Manutenção Eletromecânica Integrada</strong>
+                                <span class="uc-tag">120h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-pcm.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Planejamento e Controle da Manutenção (PCM)</strong>
+                                <span class="uc-tag">40h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-projetos.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Projetos Eletromecânicos e Automação</strong>
+                                <span class="uc-tag">100h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+
+                        <a href="uc-eficiencia.html" class="uc-item">
+                            <div class="uc-info">
+                                <strong>Eficiência Energética e Conservação</strong>
+                                <span class="uc-tag">40h</span>
+                            </div>
+                            <span class="uc-action">Acessar Aula &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Seção de Guia Rápido de Fórmulas -->
     <section id="formulas" class="section bg-light">
