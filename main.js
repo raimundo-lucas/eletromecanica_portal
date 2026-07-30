@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+    
 // 4. Lógica para expandir/recolher os módulos (UCs)
     const toggleBtns = document.querySelectorAll('.btn-toggle-uc');
 
