@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos da Eletricidade Industrial - Portal Eletromecânica</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Global do Site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-title">ELETROMECÂNICA</span>
+                <span class="logo-subtitle">PORTAL DO ALUNO</span>
+            </a>
+            <a href="index.html#modulos" class="btn btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">&larr; Voltar aos Módulos</a>
+        </div>
+    </header>
+
+    <!-- Banner da UC -->
+    <section class="hero" style="min-height: 35vh;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge" style="margin-bottom: 0.5rem; display: inline-block;">Módulo Introdutório • 60 horas</span>
+            <h1>Fundamentos da Eletricidade Industrial</h1>
+            <p>Conceitos de grandezas elétricas, circuitos CC/CA, leis de Ohm, potência e segurança em instalações.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo da Disciplina -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Bloco 1: Materiais para Download (Google Drive) -->
+            <h2 class="section-title">Apostilas e Materiais Didáticos</h2>
+            <p class="section-subtitle">Arquivos e guias de apoio hospedados no Google Drive.</p>
+
+            <div class="grid-cards" style="margin-bottom: 3rem;">
+                <div class="card" style="padding: 1.5rem;">
+                    <h3>Apostila da Disciplina (PDF)</h3>
+                    <p style="color: var(--text-muted); margin: 0.5rem 0 1rem 0;">Conteúdo teórico completo em formato PDF.</p>
+                    <!-- Insira o link do seu arquivo no Google Drive abaixo -->
+                    <a href="https://drive.google.com" target="_blank" class="btn btn-primary" style="text-align: center;">Baixar no Google Drive &#128190;</a>
+                </div>
+
+                <div class="card" style="padding: 1.5rem;">
+                    <h3>Pasta de Exercícios & Listas</h3>
+                    <p style="color: var(--text-muted); margin: 0.5rem 0 1rem 0;">Acesse a pasta com gabaritos e listas de fixação.</p>
+                    <a href="https://drive.google.com" target="_blank" class="btn btn-primary" style="text-align: center;">Acessar Pasta no Drive &#128193;</a>
+                </div>
+            </div>
+
+            <!-- Bloco 2: Videoaulas Relevantes (Opcional - YouTube Embed) -->
+            <h2 class="section-title">Videoaulas Recomendadas</h2>
+            <p class="section-subtitle">Aulas explicativas de suporte para fixação do conteúdo.</p>
+
+            <div class="grid-cards">
+                <div class="card" style="padding: 1rem;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px;">
+                        <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Videoaula" allowfullscreen></iframe>
+                    </div>
+                    <h4 style="margin-top: 0.8rem; color: var(--primary-color);">Aula 01: Grandezas Elétricas Básicas</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Curso Técnico em Eletromecânica.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
