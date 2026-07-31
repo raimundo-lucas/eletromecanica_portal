@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
 
-        // Fechar menu ao clicar em qualquer link
+        // Fechar menu mobile ao clicar em qualquer link
         const navLinks = navMenu.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -24,7 +24,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Ativação do link de navegação conforme o scroll
+    // 3. Lógica da Sanfona (Expansão dos Módulos para mostrar as UCs)
+    const toggleBtns = document.querySelectorAll('.btn-toggle-uc');
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            const targetContainer = document.getElementById(targetId);
+
+            if (targetContainer) {
+                // Alterna exibição
+                btn.classList.toggle('active');
+                targetContainer.classList.toggle('active');
+
+                // Atualiza o texto do botão
+                const btnText = btn.querySelector('.btn-text');
+                if (btnText) {
+                    if (btn.classList.contains('active')) {
+                        btnText.textContent = 'Ocultar Unidades Curriculares';
+                    } else {
+                        btnText.textContent = 'Ver Unidades Curriculares';
+                    }
+                }
+            }
+        });
+    });
+
+    // 4. Destaque Automático no Menu conforme a rolagem (Scrollspy)
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-menu a');
 
@@ -33,9 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (pageYOffset >= (sectionTop - 150)) {
+            if (window.pageYOffset >= (sectionTop - 150)) {
                 currentSection = section.getAttribute('id');
             }
         });
@@ -47,5 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});    
+
+}); 
 
