@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Força o navegador a sempre carregar no topo da página
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
     
     // 1. Atualização Dinâmica do Ano no Rodapé
     const yearSpan = document.getElementById('year');
